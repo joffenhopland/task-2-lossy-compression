@@ -123,16 +123,16 @@ print(f"compressed_high_low_freq:\n {compressed_high_low_freq}")
 print(f"decompressed_high_low_freq:\n {decompressed_high_low_freq}\n")
 
 # displaying images
-fig, axes = plt.subplots(1, 4, figsize=(20, 10))
+fig, axes = plt.subplots(4, 1, figsize=(30, 15))
 axes[0].imshow(img, cmap="gray"), axes[0].set_title("Original Image")
 axes[1].imshow(decompressed_normal, cmap="gray"), axes[1].set_title(
-    "Normal Compression"
+    "decompressed_normal"
 )
 axes[2].imshow(decompressed_low_freq, cmap="gray"), axes[2].set_title(
-    "Low Freq. Compression"
+    "decompressed_low_freq"
 )
 axes[3].imshow(decompressed_high_low_freq, cmap="gray"), axes[3].set_title(
-    "High & Low Freq. Compression"
+    "decompressed_high_low_freq"
 )
 for ax in axes:
     ax.axis("off")
